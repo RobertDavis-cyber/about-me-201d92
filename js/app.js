@@ -19,15 +19,19 @@ function favoriteIsland() {
 }
 favoriteIsland();
 
-let questionTwoGuess = prompt('Have you eaten Hawaiian Food?').toLowerCase();
-//                      'YES'.toLowerCase()
-//                      'yes'
+function spam() {
+  let questionTwoGuess = prompt('Have you eaten Hawaiian Food?').toLowerCase();
+  //                      'YES'.toLowerCase()
+  //                      'yes'
 
-if(questionTwoGuess === 'YES' || questionOneGuess === 'Y') {
-  alert('Hawaiian Food is yummy ono!');
-} else if (questionOneGuess === 'NO' || questionOneGuess === 'N') {
-  alert('You should come to Hawaii to eat some good food!.');
+  if (questionTwoGuess === 'YES' || questionTwoGuess === 'Y') {
+    alert('Hawaiian Food is yummy ono!');
+  } else if (questionTwoGuess === 'NO' || questionTwoGuess === 'N') {
+    alert('You should come to Hawaii to eat some good food!.');
+  }
 }
+spam();
+
 let questionThreeGuess = prompt('Have you eaten Hawaiian Food?').toLowerCase();
 //                      'YES'.toLowerCase()
 //                      'yes'
