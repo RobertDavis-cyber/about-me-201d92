@@ -1,4 +1,3 @@
-
 'use strict';
 
 console.log('Aloha!');
@@ -54,3 +53,19 @@ if(questionFiveGuess === 'YES' || questionOneGuess === 'Y') {
 
 
 alert(`Mahalo for visting, ${visitorName}. Mahalo for coming to my site!`);
+
+let myNum = 17;
+let guessRemain = 4;
+let userGuess = prompt('Guess what number I am thinking: Pick a number between 1 to 20');
+while (guessRemain > 0) {
+  if (userGuess > myNum) {
+    alert('Nice try your number is too High');
+  } else if (userGuess < myNum) {
+    alert('Nice try your number is too Low');
+  } else { 
+    alert('Great job! You got the correct number');
+    break;
+  }
+
+}
+
