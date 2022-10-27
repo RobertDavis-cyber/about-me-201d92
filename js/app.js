@@ -66,6 +66,24 @@ while (guessRemain > 0) {
     alert('Great job! You got the correct number');
     break;
   }
+//FOR LOOP
 
+let boyNames = ['Daniel', 'Bobby', 'David', 'Robert'];
+
+for (let i = 0; i < 6; i++) { //! slow loop (runs)
+  let boyGuess = prompt('Help name a baby boy');
+
+  for (let j = 0; j < boyNames.length; j++) { //!fast loop (runs 4*6 times)
+    if(boyGuess === boyNames [j]) {
+      alert("Great name!");
+      i = 6;
+      break;
+  }
 }
+alert('All possible answers are: ${boyNames}');
+
+alert(`Score: ${score}/2`);
+
+
+
 
