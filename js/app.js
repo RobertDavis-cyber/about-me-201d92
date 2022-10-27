@@ -45,15 +45,19 @@ function shaveIce() {
 }
 shaveIce();
 
-let questionFourGuess = prompt('Have you eaten Hawaiian Food?').toLowerCase();
-//                      'YES'.toLowerCase()
-//                      'yes'
+function catchWaves() {
+  let questionFourGuess = prompt('Have you eaten Hawaiian Food?').toLowerCase();
+  //                      'YES'.toLowerCase()
+  //                      'yes'
 
-if(questionFourGuess === 'YES' || questionFourGuess === 'Y') {
-  alert('Hawaiian Food is yummy ono!');
-} else if (questionFourGuess === 'NO' || questionFourGuess === 'N') {
-  alert('You should come to Hawaii to eat some good food!.');
+  if (questionFourGuess === 'YES' || questionFourGuess === 'Y') {
+    alert('Hawaiian Food is yummy ono!');
+  } else if (questionFourGuess === 'NO' || questionFourGuess === 'N') {
+    alert('You should come to Hawaii to eat some good food!.');
+  }
 }
+catchWaves();
+
 let questionFiveGuess = prompt('Have you eaten Hawaiian Food?').toLowerCase();
 //                      'YES'.toLowerCase()
 //                      'yes'
