@@ -2,6 +2,8 @@
 
 console.log('Aloha!');
 
+let score = 0;
+
 let visitorName = prompt('What is your name?');
 
 alert(`Aloha and mahalo for visiting ${visitorName}! Please answer yes or no to the following questions.`);
@@ -20,7 +22,7 @@ function favoriteIsland() {
 favoriteIsland();
 
 function spam() {
-  let questionTwoGuess = prompt('Have you eaten Hawaiian Food?').toLowerCase();
+  let questionTwoGuess = prompt('Have you eaten Hawaiian Food Spam Musubi?').toLowerCase();
   //                      'YES'.toLowerCase()
   //                      'yes'
 
@@ -46,27 +48,27 @@ function shaveIce() {
 shaveIce();
 
 function catchWaves() {
-  let questionFourGuess = prompt('Have you eaten Hawaiian Food?').toLowerCase();
+  let questionFourGuess = prompt('Have you tried surfing?').toLowerCase();
   //                      'YES'.toLowerCase()
   //                      'yes'
 
   if (questionFourGuess === 'YES' || questionFourGuess === 'Y') {
-    alert('Hawaiian Food is yummy ono!');
+    alert('Go grab your board and fly to Hawaii!');
   } else if (questionFourGuess === 'NO' || questionFourGuess === 'N') {
-    alert('You should come to Hawaii to eat some good food!.');
+    alert('You should come to Hawaii to hang ten!');
   }
 }
 catchWaves();
 
 function hula() {
-  let questionFiveGuess = prompt('Have you eaten Hawaiian Food?').toLowerCase();
+  let questionFiveGuess = prompt('Have you tried Hawaiian dance?').toLowerCase();
   //                      'YES'.toLowerCase()
   //                      'yes'
 
   if (questionFiveGuess === 'YES' || questionFiveGuess === 'Y') {
-    alert('Hawaiian Food is yummy ono!');
+    alert('Hula is the best way to shake the stress away!');
   } else if (questionFiveGuess === 'NO' || questionFiveGuess === 'N') {
-    alert('You should come to Hawaii to eat some good food!.');
+    alert('You need to try Hula the hawaiian dance!');
   }
 }
 hula();
