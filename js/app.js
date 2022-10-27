@@ -24,7 +24,7 @@ if(questionTwoGuess === 'YES' || questionOneGuess === 'Y') {
 } else if (questionOneGuess === 'NO' || questionOneGuess === 'N') {
   alert('You should come to Hawaii to eat some good food!.');
 }
-let questionTwoGuess = prompt('Have you eaten Hawaiian Food?').toLowerCase();
+let questionThreeGuess = prompt('Have you eaten Hawaiian Food?').toLowerCase();
 //                      'YES'.toLowerCase()
 //                      'yes'
 
@@ -33,7 +33,7 @@ if(questionThreeGuess === 'YES' || questionOneGuess === 'Y') {
 } else if (questionOneGuess === 'NO' || questionOneGuess === 'N') {
   alert('You should come to Hawaii to eat some good food!.');
 }
-let questionThreeGuess = prompt('Have you eaten Hawaiian Food?').toLowerCase();
+let questionFourGuess = prompt('Have you eaten Hawaiian Food?').toLowerCase();
 //                      'YES'.toLowerCase()
 //                      'yes'
 
@@ -42,7 +42,7 @@ if(questionFourGuess === 'YES' || questionOneGuess === 'Y') {
 } else if (questionOneGuess === 'NO' || questionOneGuess === 'N') {
   alert('You should come to Hawaii to eat some good food!.');
 }
-let questionFourGuess = prompt('Have you eaten Hawaiian Food?').toLowerCase();
+let questionFiveGuess = prompt('Have you eaten Hawaiian Food?').toLowerCase();
 //                      'YES'.toLowerCase()
 //                      'yes'
 
@@ -50,7 +50,7 @@ if(questionFiveGuess === 'YES' || questionOneGuess === 'Y') {
   alert('Hawaiian Food is yummy ono!');
 } else if (questionFiveGuess === 'NO' || questionOneGuess === 'N') {
   alert('You should come to Hawaii to eat some good food!.');
-
+}
 
 alert(`Mahalo for visting, ${visitorName}. Mahalo for coming to my site!`);
 
@@ -66,6 +66,7 @@ while (guessRemain > 0) {
     alert('Great job! You got the correct number');
     break;
   }
+}
 //FOR LOOP
 
 let boyNames = ['Daniel', 'Bobby', 'David', 'Robert'];
@@ -78,6 +79,7 @@ for (let i = 0; i < 6; i++) { //! slow loop (runs)
       alert("Great name!");
       i = 6;
       break;
+    }
   }
 }
 alert('All possible answers are: ${boyNames}');
