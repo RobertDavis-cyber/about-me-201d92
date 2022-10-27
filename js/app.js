@@ -32,31 +32,35 @@ function spam() {
 }
 spam();
 
-let questionThreeGuess = prompt('Have you eaten Hawaiian Food?').toLowerCase();
-//                      'YES'.toLowerCase()
-//                      'yes'
+function shaveIce() {
+  let questionThreeGuess = prompt('Have you eaten Hawaiian Food?').toLowerCase();
+  //                      'YES'.toLowerCase()
+  //                      'yes'
 
-if(questionThreeGuess === 'YES' || questionOneGuess === 'Y') {
-  alert('Hawaiian Food is yummy ono!');
-} else if (questionOneGuess === 'NO' || questionOneGuess === 'N') {
-  alert('You should come to Hawaii to eat some good food!.');
+  if (questionThreeGuess === 'YES' || questionThreeGuess === 'Y') {
+    alert('Hawaiian Food is yummy ono!');
+  } else if (questionThreeGuess === 'NO' || questionThreeGuess === 'N') {
+    alert('You should come to Hawaii to eat some good food!.');
+  }
 }
+shaveIce();
+
 let questionFourGuess = prompt('Have you eaten Hawaiian Food?').toLowerCase();
 //                      'YES'.toLowerCase()
 //                      'yes'
 
-if(questionFourGuess === 'YES' || questionOneGuess === 'Y') {
+if(questionFourGuess === 'YES' || questionFourGuess === 'Y') {
   alert('Hawaiian Food is yummy ono!');
-} else if (questionOneGuess === 'NO' || questionOneGuess === 'N') {
+} else if (questionFourGuess === 'NO' || questionFourGuess === 'N') {
   alert('You should come to Hawaii to eat some good food!.');
 }
 let questionFiveGuess = prompt('Have you eaten Hawaiian Food?').toLowerCase();
 //                      'YES'.toLowerCase()
 //                      'yes'
 
-if(questionFiveGuess === 'YES' || questionOneGuess === 'Y') {
+if(questionFiveGuess === 'YES' || questionFiveGuess === 'Y') {
   alert('Hawaiian Food is yummy ono!');
-} else if (questionFiveGuess === 'NO' || questionOneGuess === 'N') {
+} else if (questionFiveGuess === 'NO' || questionFiveGuess === 'N') {
   alert('You should come to Hawaii to eat some good food!.');
 }
 
@@ -92,7 +96,7 @@ for (let i = 0; i < 6; i++) { //! slow loop (runs)
 }
 alert('All possible answers are: ${boyNames}');
 
-alert(`Score: ${score}/2`);
+alert(`Score: ${score}/7`);
 
 
 
