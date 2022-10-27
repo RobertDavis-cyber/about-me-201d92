@@ -58,46 +58,56 @@ function catchWaves() {
 }
 catchWaves();
 
-let questionFiveGuess = prompt('Have you eaten Hawaiian Food?').toLowerCase();
-//                      'YES'.toLowerCase()
-//                      'yes'
+function hula() {
+  let questionFiveGuess = prompt('Have you eaten Hawaiian Food?').toLowerCase();
+  //                      'YES'.toLowerCase()
+  //                      'yes'
 
-if(questionFiveGuess === 'YES' || questionFiveGuess === 'Y') {
-  alert('Hawaiian Food is yummy ono!');
-} else if (questionFiveGuess === 'NO' || questionFiveGuess === 'N') {
-  alert('You should come to Hawaii to eat some good food!.');
+  if (questionFiveGuess === 'YES' || questionFiveGuess === 'Y') {
+    alert('Hawaiian Food is yummy ono!');
+  } else if (questionFiveGuess === 'NO' || questionFiveGuess === 'N') {
+    alert('You should come to Hawaii to eat some good food!.');
+  }
 }
+hula();
 
 alert(`Mahalo for visting, ${visitorName}. Mahalo for coming to my site!`);
 
-let myNum = 17;
-let guessRemain = 4;
-let userGuess = prompt('Guess what number I am thinking: Pick a number between 1 to 20');
-while (guessRemain > 0) {
-  if (userGuess > myNum) {
-    alert('Nice try your number is too High');
-  } else if (userGuess < myNum) {
-    alert('Nice try your number is too Low');
-  } else { 
-    alert('Great job! You got the correct number');
-    break;
-  }
-}
-//FOR LOOP
-
-let boyNames = ['Daniel', 'Bobby', 'David', 'Robert'];
-
-for (let i = 0; i < 6; i++) { //! slow loop (runs)
-  let boyGuess = prompt('Help name a baby boy');
-
-  for (let j = 0; j < boyNames.length; j++) { //!fast loop (runs 4*6 times)
-    if(boyGuess === boyNames [j]) {
-      alert("Great name!");
-      i = 6;
+function game() {
+  let myNum = 17;
+  let guessRemain = 4;
+  let userGuess = prompt('Guess what number I am thinking: Pick a number between 1 to 20');
+  while (guessRemain > 0) {
+    if (userGuess > myNum) {
+      alert('Nice try your number is too High');
+    } else if (userGuess < myNum) {
+      alert('Nice try your number is too Low');
+    } else {
+      alert('Great job! You got the correct number');
       break;
     }
   }
 }
+game();
+
+//FOR LOOP
+
+function names() {
+  let boyNames = ['Daniel', 'Bobby', 'David', 'Robert'];
+
+  for (let i = 0; i < 6; i++) { //! slow loop (runs)
+    let boyGuess = prompt('Help name a baby boy');
+
+    for (let j = 0; j < boyNames.length; j++) { //!fast loop (runs 4*6 times)
+      if (boyGuess === boyNames[j]) {
+        alert("Great name!");
+        i = 6;
+        break;
+      }
+    }
+  }
+}
+names();
 alert('All possible answers are: ${boyNames}');
 
 alert(`Score: ${score}/7`);
