@@ -6,15 +6,19 @@ let visitorName = prompt('What is your name?');
 
 alert(`Aloha and mahalo for visiting ${visitorName}! Please answer yes or no to the following questions.`);
 
-let questionOneGuess = prompt('Have you been to Hawaii?').toUpperCase();
-//                      'yes'.toUpperCase()
-//                      'YES'
+function favoriteIsland() {
+  let questionOneGuess = prompt('Have you been to Hawaii?').toUpperCase();
+  //                      'yes'.toUpperCase()
+  //                      'YES'
 
-if(questionOneGuess === 'YES' || questionOneGuess === 'Y') {
-  alert('Do you miss paradise!');
-} else if (questionOneGuess === 'NO' || questionOneGuess === 'N') {
-  alert('You should book a flight.');
+  if (questionOneGuess === 'YES' || questionOneGuess === 'Y') {
+    alert('Do you miss paradise!');
+  } else if (questionOneGuess === 'NO' || questionOneGuess === 'N') {
+    alert('You should book a flight.');
+  }
 }
+favoriteIsland();
+
 let questionTwoGuess = prompt('Have you eaten Hawaiian Food?').toLowerCase();
 //                      'YES'.toLowerCase()
 //                      'yes'
