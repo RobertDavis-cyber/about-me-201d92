@@ -78,8 +78,8 @@ alert(`Mahalo for visting, ${visitorName}. Mahalo for coming to my site!`);
 function game() {
   let myNum = 17;
   let guessRemain = 4;
+  while (gueses > 0) {
   let userGuess = prompt('Guess what number I am thinking: Pick a number between 1 to 20');
-  while (guessRemain > 0) {
     if (userGuess > myNum) {
       alert('Nice try your number is too High');
     } else if (userGuess < myNum) {
