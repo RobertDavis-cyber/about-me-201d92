@@ -1,20 +1,29 @@
-
-
 body {
-  background-color:rgba(255, 255, 0, 0.247);
-  color: black
-  margin: 15px;
-  padding: 25px
+  background-color: yellow; 
+  border: 10px dotted black;
 }
 
-  header {
-      background-color: 
-      color: pink;
-      border: 10px solid pink; 
-      padding: 10px;
-  }
-  
-  footer {
-     color: pink; 
-     
+header {
+  background-color: whitesmoke;
+  color: black;
+  border: 10px solid red; 
+  padding: 1px;
+  margin: 10px;
+}
+
+main {
+  background-color: yellow;
+  color: black;
+  border: 10px solid pink;
+  padding: 10px;
+  margin: 5px;
+  float: left;
+}
+
+footer {
+  background-color: whitesmoke; 
+  color: black; 
+  border: 5px solid blue;
+  padding: 10px;
+  margin: 5px;
 }
